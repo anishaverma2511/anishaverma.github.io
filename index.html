@@ -89,6 +89,27 @@
   /* ---------- ambient starfield, since "Universe" is on the interest list ---------- */
   #stars{ position: fixed; inset:0; z-index:0; }
 
+/* Sagittarius constellation */
+.constellation{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  opacity:.06;
+}
+
+.constellation polyline{
+  stroke:rgba(255,182,208,.45);
+  stroke-width:.8;
+  fill:none;
+}
+
+.constellation circle{
+  fill:rgba(255,215,230,.55);
+  filter:drop-shadow(0 0 4px rgba(255,182,208,.18));
+}
+
+  
   /* ---------- film-grain overlay for texture ---------- */
   .grain{
     position: fixed; inset:0; z-index: 1; pointer-events:none; opacity:.035;
@@ -255,6 +276,15 @@
 <body>
 
 <canvas id="stars"></canvas>
+<svg class="constellation" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+  ...
+</svg>
+
+<div class="grain"></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+  
 <div class="grain"></div>
 <div class="cursor-dot"></div>
 <div class="cursor-ring"></div>
