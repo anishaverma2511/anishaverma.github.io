@@ -274,17 +274,62 @@
 <body>
 
 <canvas id="stars"></canvas>
-<svg class="constellation" viewBox="0 0 1920 1080" preserveAspectRatio="none">
-  <!-- Sagittarius — the Teapot asterism -->
-  <polyline points="1290,95 1346,120 1414,160 1386,246 1326,262 1242,234 1166,165 1250,129 1290,95"/>
-  <circle cx="1290" cy="95" r="7"/>
-  <circle cx="1346" cy="120" r="5"/>
-  <circle cx="1414" cy="160" r="5"/>
-  <circle cx="1386" cy="246" r="5"/>
-  <circle cx="1326" cy="262" r="5"/>
-  <circle cx="1242" cy="234" r="7"/>
-  <circle cx="1166" cy="165" r="5"/>
-  <circle cx="1250" cy="129" r="5"/>
+e block I sent is the SVG. Here's the complete version without any omissions:
+
+<svg class="constellation" viewBox="0 0 1920 1080" preserveAspectRatio="none" aria-hidden="true">
+
+  <!-- Connecting lines -->
+  <polyline
+    points="
+      1290,95
+      1346,120
+      1414,160
+      1386,246
+      1326,262
+      1242,234
+      1166,165
+      1250,129
+      1290,95
+      1112,132
+      1070,105
+      1030,90
+      1112,132
+      1092,185
+      1058,232
+      1018,282
+      1386,246
+      1458,282
+      1525,322"
+    fill="none"
+    stroke="#ffb6d0"
+    stroke-width="1"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <!-- Teapot -->
+  <circle cx="1290" cy="95" r="3" fill="#ffd6e6"/>
+  <circle cx="1346" cy="120" r="2.5" fill="#ffd6e6"/>
+  <circle cx="1414" cy="160" r="2.5" fill="#ffd6e6"/>
+  <circle cx="1386" cy="246" r="2.5" fill="#ffd6e6"/>
+  <circle cx="1326" cy="262" r="2.5" fill="#ffd6e6"/>
+  <circle cx="1242" cy="234" r="3" fill="#ffd6e6"/>
+  <circle cx="1166" cy="165" r="2.5" fill="#ffd6e6"/>
+  <circle cx="1250" cy="129" r="2.5" fill="#ffd6e6"/>
+
+  <!-- Bow -->
+  <circle cx="1112" cy="132" r="2.3" fill="#ffd6e6"/>
+  <circle cx="1070" cy="105" r="2.3" fill="#ffd6e6"/>
+  <circle cx="1030" cy="90" r="2.5" fill="#ffd6e6"/>
+
+  <!-- Arrow -->
+  <circle cx="1092" cy="185" r="2.3" fill="#ffd6e6"/>
+  <circle cx="1058" cy="232" r="2.3" fill="#ffd6e6"/>
+  <circle cx="1018" cy="282" r="2.5" fill="#ffd6e6"/>
+
+  <!-- Tail -->
+  <circle cx="1458" cy="282" r="2.3" fill="#ffd6e6"/>
+  <circle cx="1525" cy="322" r="2.5" fill="#ffd6e6"/>
+
 </svg>
 
 <div class="grain"></div>
